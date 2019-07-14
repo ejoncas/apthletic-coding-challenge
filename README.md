@@ -149,6 +149,11 @@ around overall scores but it is better for retrieval as there is no need for joi
 depends a lot on how you're going  to use it. Here I decided to keep the scope small  and go for the simplest solution
 that gets the job done.
 
+* Why Python for the crawlers? Good question. I found this really good [Scrapy](https://scrapy.org) library and I thought it  was ideal
+for the coding test. Then  I realised it was not really necessary as the AFL website was calling a  JSON api and any language could do.
+I also wanted to use Python because I thought of configuring the crawlers to run constantly in a lambda + Clodwatch event, but then
+I figure this was a bit too much work if I wanted to get it done in the weekend. But otherwise, I think Python is  an  amazing language
+for scripting!
 
 
 
