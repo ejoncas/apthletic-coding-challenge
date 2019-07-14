@@ -9,7 +9,7 @@ from scrapy.crawler import CrawlerProcess
 from scrapy.signalmanager import dispatcher
 
 logger = logging.getLogger()
-
+logger.setLevel(logging.INFO)
 
 def to_utc_time(date):
     return datetime.strptime(date + " +0000", '%m/%d/%Y %H:%M:%S %z')

@@ -2,10 +2,12 @@ import json
 import logging
 import os
 import requests
+import sys
 from datetime import datetime
 
 TOTAL_ROUNDS_AFL_SEASON = 23
 
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger()
 
 afl_events_endpoint = "https://www.afl.com.au/aflrender/get"

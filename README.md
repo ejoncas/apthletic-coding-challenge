@@ -1,3 +1,7 @@
+# Apthletic Coding Challenge
+
+[![Build Status](https://travis-ci.com/nanducoder/apthletic-coding-challenge.svg?branch=master)](https://travis-ci.com/nanducoder/apthletic-coding-challenge)
+
 # Requirements
 
 ```
@@ -28,7 +32,7 @@ This crawler operates reading the HTML and scraping the data I care about in ord
 
 ## AFL Crawler (API Crawler)
 
-This crawler is a simple json API because the  AFL website  has a nice API  that their  web UI uses to generate all
+This crawler is a simple json API call because the  AFL website  has a nice API  that their  web UI uses to generate all
 the content  dynamically.
 
 
@@ -41,21 +45,34 @@ The crawlers are dockerized, so no need for any dependency install other than do
 
 ```
 cd crawler
-docker-compose run crawler python ironman_crawler.py
+docker-compose run -e "EVENTS_API_URL=http://<url>" crawler python ironman_crawler.py
 ```
 
 ### Run AFL Crawler
 
 ```
 cd crawler
-docker-compose run crawler python afl_crawler.py
+docker-compose run -e "EVENTS_API_URL=http://<url>" crawler python afl_crawler.py
 ```
 
 
 # Events API
 
+## Compile
+
+```
+./mvnw package
+```
+
+## Run locally
+
+```
+java -jar target/apthletic-events-api-0.0.1-SNAPSHOT.jar
+```
 
 ## How to Query
+
+This app is currently deployed in Heroku. Endpoint will be provided by email.
 
 The following curl command will return all AFL events starting after 2000-07-25
 
@@ -84,11 +101,27 @@ The `page` query parameter can be added to paginate through results. Mostly usef
 as  there are quite a few.
 
 
+### No Data in the API?
+
+It is completely possible as it is an in-memory database and Heroku kills  the service if unused.
+Just  re-run the crawlers:
+
+```
+cd crawler
+docker-compose run -e "EVENTS_API_URL=http://<url>" crawler python ironman_crawler.py
+docker-compose run -e "EVENTS_API_URL=http://<url>" crawler python afl_crawler.py
+```
+
 # Design  Decisions / Trade-offs
 
 
 * Indexes are non-existent. This is fine for such a simple project but for a real use case we would need to add appropriate
 indexes to the database, most likely one on event_datetime so we can easily search by  event  start time.
+
+* Database: Uses H2 in memory database
+
+* Deployment: This project is getting deployed to my heroku account. Deployment is just running
+a java -jar command (see `Procfile`).
 
 * Pagination:  I'm using the built-in pagination mechanisms from spring-jpa. This is usually good to start with but as the data
 grows we will quickly find issues with COUNT(*) and OFFSET in queries. At that point, it  would be better to implement a token based
