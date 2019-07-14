@@ -5,4 +5,4 @@ services:
     volumes:
       - .:/code
     environment:
-      - EVENTS_API_URL=http://12238409.ngrok.io
+      - EVENTS_API_URL=https://whispering-castle-54780.herokuapp.com

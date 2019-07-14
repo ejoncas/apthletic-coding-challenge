@@ -40,12 +40,14 @@ The crawlers are dockerized, so no need for any dependency install other than do
 ### Run Ironman Crawler
 
 ```
+cd crawler
 docker-compose run crawler python ironman_crawler.py
 ```
 
 ### Run AFL Crawler
 
 ```
+cd crawler
 docker-compose run crawler python afl_crawler.py
 ```
 

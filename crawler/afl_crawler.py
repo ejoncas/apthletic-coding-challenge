@@ -4,6 +4,8 @@ import os
 import requests
 from datetime import datetime
 
+TOTAL_ROUNDS_AFL_SEASON = 23
+
 logger = logging.getLogger()
 
 afl_events_endpoint = "https://www.afl.com.au/aflrender/get"
@@ -44,13 +46,14 @@ def to_team(away):
 ## Looks like the pattern is as follow:
 ## Season = CD_S<year><seasonIdentifier>
 ## Round = CD_R<year><seasonIdentifier><RoundNumber>
-def retrieve_afl_events(roundNumber):
+def retrieve_afl_events(round_number):
+    logger.info("Retrieving events for round %s", round_number)
     events = []
     response = requests.get(afl_events_endpoint, params={
         'service': 'fullFixture',
         'field': 'json',
         'site': 'AFL',
-        'params': 'seasonId:CD_S2019014,competitionType:AFL,roundId:CD_R2019014' + str(roundNumber)
+        'params': 'seasonId:CD_S2019014,competitionType:AFL,roundId:CD_R2019014' + format(round_number, '02')
     })
     if response.status_code == 200:
         for fixture in response.json().get('fixtures'):
@@ -60,7 +63,7 @@ def retrieve_afl_events(roundNumber):
             utc_time = find_utc_time(match.get('startDateTimes')).isoformat('T', 'milliseconds')
             home_team = to_team(home)
             away_team = to_team(away)
-            match_code = "M_2019_R" + str(roundNumber) + "_" + home_team['id'] + "_" + away_team['id']
+            match_code = "M_2019_R" + str(round_number) + "_" + home_team['id'] + "_" + away_team['id']
             events.append({
                 'id': match_code,
                 'type': 'afl',
@@ -92,6 +95,6 @@ def load_events(events):
         logger.warn("No events to load")
 
 
-events = retrieve_afl_events(17)
-load_events(events)
-print("Retrieved  data: ", json.dumps(events, indent=4))
+for i in range(1, TOTAL_ROUNDS_AFL_SEASON):
+    events = retrieve_afl_events(i)
+    load_events(events)
