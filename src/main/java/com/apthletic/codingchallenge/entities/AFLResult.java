@@ -2,6 +2,8 @@
 
 package com.apthletic.codingchallenge.entities;
 
+import com.google.common.base.MoreObjects;
+
 public class AFLResult {
 
     private int totalScore;
@@ -32,4 +34,10 @@ public class AFLResult {
         this.goals = goals;
     }
 
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("totalScore", totalScore)
+                .toString();
+    }
 }

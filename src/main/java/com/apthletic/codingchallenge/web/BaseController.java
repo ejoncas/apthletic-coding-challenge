@@ -10,6 +10,9 @@ import java.util.function.Function;
 
 import static java.util.stream.Collectors.toMap;
 
+/**
+ * Base controller
+ */
 public abstract class BaseController {
 
     private final Map<EventType, EventService<?>> importers;

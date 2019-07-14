@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.time.OffsetDateTime;
 import java.util.List;
 
+/**
+ * This controller is in charge of retrieving events from the database based on different search criteria.
+ */
 @RestController
 public class EventController extends BaseController {
 

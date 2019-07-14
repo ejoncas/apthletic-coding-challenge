@@ -1,0 +1,27 @@
+{
+  "type": "afl",
+  "title": "Richmond vs GWS Giants",
+  "time": "2019-07-14T03:10:00Z",
+  "status": "NOT_STARTED",
+  "id": "M_2019_R17_RICH_GWS",
+  "venue": "MCG",
+  "round": "Round 17",
+  "homeTeam": {
+    "id": "RICH",
+    "name": "Richmond"
+  },
+  "awayTeam": {
+    "id": "GWS",
+    "name": "GWS Giants"
+  },
+  "homeResult": {
+    "totalScore": 0,
+    "behinds": 0,
+    "goals": 0
+  },
+  "awayResult": {
+    "totalScore": 0,
+    "behinds": 0,
+    "goals": 0
+  }
+}

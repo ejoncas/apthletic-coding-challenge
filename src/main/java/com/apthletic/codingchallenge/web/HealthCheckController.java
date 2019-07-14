@@ -1,10 +1,7 @@
 package com.apthletic.codingchallenge.web;
 
-import com.google.common.collect.ImmutableMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Map;
 
 /**
  * Controller to make sure the  application is alive.
@@ -16,8 +13,8 @@ import java.util.Map;
 public class HealthCheckController {
 
     @GetMapping("/health")
-    public Map<String, String> health() {
-        return ImmutableMap.of("status", "OK");
+    public StatusResponse health() {
+        return StatusResponse.of("I'm alive!");
     }
 
 }

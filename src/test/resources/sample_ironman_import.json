@@ -1,0 +1,72 @@
+[
+  {
+    "id": "b8d54708-c0fd-4f45-9a87-ffc73f2afac9",
+    "type": "ironman",
+    "title": "IRONKIDS UK",
+    "location": "Bolton, England",
+    "time": "2019-07-13T00:00:00.000+00:00",
+    "category": "IronKids",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/0c60d4822f3b43fb88985246eeac7e8f/bolton%20cover.jpg?w=375&h=165&c=1"
+  },
+  {
+    "id": "0ce71faa-3968-4cf7-9039-b525aee03789",
+    "type": "ironman",
+    "title": "IRONKIDS Astana",
+    "location": "Astana, Kazakhstan",
+    "time": "2019-07-13T00:00:00.000+00:00",
+    "category": "IronKids",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/273d045e73dc4a2885823085765eab99/20180424%20temporary%20ironkids%20astana%20picture%201600x980.jpg?w=375&h=165&c=1"
+  },
+  {
+    "id": "d53fc2d5-1b40-4e58-9149-90e5e9ac5d6a",
+    "type": "ironman",
+    "title": "70.3 Muncie",
+    "location": "Muncie, Indiana, USA",
+    "time": "2019-07-13T00:00:00.000+00:00",
+    "category": "IRONMAN 70.3",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/48683c15610d4e53bbe7ea3417047eee/159207083%201600.jpg?w=375&h=165&c=1"
+  },
+  {
+    "id": "09b4b626-7dd5-4909-85e2-0f778874ce0f",
+    "type": "ironman",
+    "title": "IRONKIDS Vitoria-Gasteiz",
+    "location": "Vitoria, Spain",
+    "time": "2019-07-13T00:00:00.000+00:00",
+    "category": "IronKids",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/3326fc17e03c44e5bf2eecd3cac7a234/picture%20to%20vitoria.jpg?w=375&h=165&c=1"
+  },
+  {
+    "id": "c7b5cac0-ed0e-4d3d-a2f5-b33719696ec6",
+    "type": "ironman",
+    "title": "70.3 Astana",
+    "location": "Astana, Kazakhstan",
+    "time": "2019-07-14T00:00:00.000+00:00",
+    "category": "IRONMAN 70.3",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/7f5c67f9a4414c4794367071e02754fe/201707%20im703astana%201600x980%204.jpg?w=375&h=165&c=1"
+  },
+  {
+    "id": "430dece2-4e9c-4188-953c-4acd3c93a220",
+    "type": "ironman",
+    "title": "UK",
+    "location": "Bolton, England",
+    "time": "2019-07-14T00:00:00.000+00:00",
+    "category": "IRONMAN",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/10d933a0ea024573ad79a9526cd3769b/2015%20uk%20bike3%201600.jpg?w=375&h=165&c=1"
+  },
+  {
+    "id": "b983cad7-7fac-48fb-8534-2370c1a33097",
+    "type": "ironman",
+    "title": "Vitoria-Gasteiz",
+    "location": "Vitoria, Spain",
+    "time": "2019-07-14T00:00:00.000+00:00",
+    "category": "IRONMAN",
+    "status": "NOT_STARTED",
+    "image": "http://ap.ironman.com/~/media/eedf041cb79b46d9bf5f550edc75722e/20180917%20rotator%20im%20vitoriagasteiz%201600x980%201.jpg?w=375&h=165&c=1"
+  }
+]

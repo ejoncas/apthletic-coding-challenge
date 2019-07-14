@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Controller in charge of importing events to the system
+ */
 @RestController
 public class ImportController extends BaseController {
 
@@ -23,11 +26,12 @@ public class ImportController extends BaseController {
 
     @PostMapping("/v1/import/{type}")
     @ResponseStatus(HttpStatus.CREATED)
-    public <T extends Event> void importEvents(@PathVariable("type") EventType type,
-                                               @RequestBody List<T> events) {
+    public <T extends Event> StatusResponse importEvents(@PathVariable("type") EventType type,
+                                                         @RequestBody List<T> events) {
         LOGGER.info("Importing events for type {} - Data: {}", type, events);
         EventService<T> service = findService(type);
         service.importEvents(events);
+        return StatusResponse.of("Imported " + events.size() + " events");
     }
 
 

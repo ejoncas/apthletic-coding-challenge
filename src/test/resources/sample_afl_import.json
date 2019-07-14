@@ -1,0 +1,245 @@
+[
+  {
+    "id": "M_2019_R1_CARL_RICH",
+    "type": "afl",
+    "title": "Carlton vs Richmond",
+    "time": "2019-03-21T08:25:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "MCG",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "CARL",
+      "name": "Carlton"
+    },
+    "awayTeam": {
+      "id": "RICH",
+      "name": "Richmond"
+    },
+    "homeResult": {
+      "totalScore": 64,
+      "behind": null,
+      "goals": 9
+    },
+    "awayResult": {
+      "totalScore": 97,
+      "behind": null,
+      "goals": 14
+    }
+  },
+  {
+    "id": "M_2019_R1_COLL_GEEL",
+    "type": "afl",
+    "title": "Collingwood vs Geelong Cats",
+    "time": "2019-03-22T08:50:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "MCG",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "COLL",
+      "name": "Collingwood"
+    },
+    "awayTeam": {
+      "id": "GEEL",
+      "name": "Geelong Cats"
+    },
+    "homeResult": {
+      "totalScore": 65,
+      "behind": null,
+      "goals": 9
+    },
+    "awayResult": {
+      "totalScore": 72,
+      "behind": null,
+      "goals": 10
+    }
+  },
+  {
+    "id": "M_2019_R1_MELB_PORT",
+    "type": "afl",
+    "title": "Melbourne vs Port Adelaide",
+    "time": "2019-03-23T02:45:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "MCG",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "MELB",
+      "name": "Melbourne"
+    },
+    "awayTeam": {
+      "id": "PORT",
+      "name": "Port Adelaide"
+    },
+    "homeResult": {
+      "totalScore": 61,
+      "behind": null,
+      "goals": 9
+    },
+    "awayResult": {
+      "totalScore": 87,
+      "behind": null,
+      "goals": 12
+    }
+  },
+  {
+    "id": "M_2019_R1_ADEL_HAW",
+    "type": "afl",
+    "title": "Adelaide Crows vs Hawthorn",
+    "time": "2019-03-23T05:35:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "Adelaide Oval",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "ADEL",
+      "name": "Adelaide Crows"
+    },
+    "awayTeam": {
+      "id": "HAW",
+      "name": "Hawthorn"
+    },
+    "homeResult": {
+      "totalScore": 55,
+      "behind": null,
+      "goals": 7
+    },
+    "awayResult": {
+      "totalScore": 87,
+      "behind": null,
+      "goals": 12
+    }
+  },
+  {
+    "id": "M_2019_R1_WB_SYD",
+    "type": "afl",
+    "title": "Western Bulldogs vs Sydney Swans",
+    "time": "2019-03-23T08:25:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "Marvel Stadium",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "WB",
+      "name": "Western Bulldogs"
+    },
+    "awayTeam": {
+      "id": "SYD",
+      "name": "Sydney Swans"
+    },
+    "homeResult": {
+      "totalScore": 82,
+      "behind": null,
+      "goals": 11
+    },
+    "awayResult": {
+      "totalScore": 65,
+      "behind": null,
+      "goals": 9
+    }
+  },
+  {
+    "id": "M_2019_R1_BL_WCE",
+    "type": "afl",
+    "title": "Brisbane Lions vs West Coast Eagles",
+    "time": "2019-03-23T09:20:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "Gabba",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "BL",
+      "name": "Brisbane Lions"
+    },
+    "awayTeam": {
+      "id": "WCE",
+      "name": "West Coast Eagles"
+    },
+    "homeResult": {
+      "totalScore": 102,
+      "behind": null,
+      "goals": 15
+    },
+    "awayResult": {
+      "totalScore": 58,
+      "behind": null,
+      "goals": 8
+    }
+  },
+  {
+    "id": "M_2019_R1_STK_GCFC",
+    "type": "afl",
+    "title": "St Kilda vs Gold Coast Suns",
+    "time": "2019-03-24T02:10:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "Marvel Stadium",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "STK",
+      "name": "St Kilda"
+    },
+    "awayTeam": {
+      "id": "GCFC",
+      "name": "Gold Coast Suns"
+    },
+    "homeResult": {
+      "totalScore": 85,
+      "behind": null,
+      "goals": 13
+    },
+    "awayResult": {
+      "totalScore": 84,
+      "behind": null,
+      "goals": 13
+    }
+  },
+  {
+    "id": "M_2019_R1_GWS_ESS",
+    "type": "afl",
+    "title": "GWS Giants vs Essendon",
+    "time": "2019-03-24T04:20:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "GIANTS Stadium",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "GWS",
+      "name": "GWS Giants"
+    },
+    "awayTeam": {
+      "id": "ESS",
+      "name": "Essendon"
+    },
+    "homeResult": {
+      "totalScore": 112,
+      "behind": null,
+      "goals": 16
+    },
+    "awayResult": {
+      "totalScore": 40,
+      "behind": null,
+      "goals": 5
+    }
+  },
+  {
+    "id": "M_2019_R1_FRE_NMFC",
+    "type": "afl",
+    "title": "Fremantle vs North Melbourne",
+    "time": "2019-03-24T07:20:00.000+00:00",
+    "status": "FINISHED",
+    "venue": "Optus Stadium",
+    "round": "Round 1",
+    "homeTeam": {
+      "id": "FRE",
+      "name": "Fremantle"
+    },
+    "awayTeam": {
+      "id": "NMFC",
+      "name": "North Melbourne"
+    },
+    "homeResult": {
+      "totalScore": 141,
+      "behind": null,
+      "goals": 21
+    },
+    "awayResult": {
+      "totalScore": 59,
+      "behind": null,
+      "goals": 9
+    }
+  }
+]

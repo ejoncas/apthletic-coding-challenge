@@ -5,6 +5,7 @@ import com.apthletic.codingchallenge.entities.AFLTeam;
 import com.apthletic.codingchallenge.entities.EventType;
 import com.apthletic.codingchallenge.repositories.AFLEventRepository;
 import com.apthletic.codingchallenge.repositories.AFLTeamRepository;
+import com.google.common.annotations.VisibleForTesting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -17,6 +18,11 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toSet;
 
+/**
+ * AFL Event Service
+ * <p>
+ * This  service is responsible of implementing all the business logic around  storing and  retrieving  AFL Events
+ */
 @Service
 public class AFLEventService implements EventService<AFLEvent> {
 
@@ -29,6 +35,12 @@ public class AFLEventService implements EventService<AFLEvent> {
     public void importEvents(List<AFLEvent> events) {
         saveTeams(events);
         saveEvents(events);
+    }
+
+    @VisibleForTesting
+    public void clearEvents() {
+        repository.deleteAll();
+        teamRepository.deleteAll();
     }
 
     @Override
