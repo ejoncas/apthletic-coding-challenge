@@ -1,0 +1,8 @@
+version: '3'
+services:
+  crawler:
+    build: .
+    volumes:
+      - .:/code
+    environment:
+      - EVENTS_API_URL=http://12238409.ngrok.io
